@@ -1,4 +1,4 @@
-const url = "https://pokeapi.co/api/v2/pokemon?limit=20";
+const url = "https://pokeapi.co/api/v2/pokemon?limit=50";
 
 
 async function pokemon() {
@@ -11,7 +11,8 @@ async function pokemon() {
         pokemonInfoDiv.innerHTML += `
                 <div class="pokemon">
                     <h2>${pokemonData.name}</h2>
-                    <img src="${pokemonData.sprites.front_default}" alt="${pokemonData.name}" />
+                    <img src="${pokemonData.sprites.front_default}" width: 500px;
+                    height: 500px; />
                 </div>
             `;
 
